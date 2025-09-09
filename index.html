@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Материалы из презентации: "Как мы прошли квест "Создай дизайн-систему""
+    </title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        background: #f8f9fb;
+        color: #222;
+        line-height: 1.5;
+        padding: 40px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        margin: 40px 0 20px;
+        font-size: 1.5rem;
+        color: #444;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        align-items: stretch; /* выравнивание карточек */
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        max-width: 64px;
+        max-height: 64px;
+        height: 64px;
+        width: 64px;
+        margin-bottom: 12px;
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 1rem;
+      }
+
+      .card p {
+        font-size: 0.85rem;
+        color: #555;
+        margin: 6px 0 12px;
+        flex-grow: 1; /* описание растягивается */
+      }
+
+      .card .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: #0057d9;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-top: auto; /* ссылка всегда внизу */
+      }
+
+      .link-icon {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='currentColor' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z'/><path d='M5 5h5V3H3v7h2V5zm0 14v-5H3v7h7v-2H5zm14-5h2v7h-7v-2h5v-5z'/></svg>");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      footer {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #777;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Материалы из презентации: <br />
+      Как мы прошли квест "Создай дизайн-систему"
+    </h1>
+
+    <h2>Дизайн-системы и UI-библиотеки</h2>
+    <div class="grid">
+      <a class="card" href="https://gravity-ui.com/ru" target="_blank">
+        <img src="https://gravity-ui.com/favicon.ico" alt="Gravity UI" />
+        <strong>Gravity UI</strong>
+        <p>
+          Дизайн-система Яндекса с компонентами и инструментами для создания
+          интерфейсов.
+        </p>
+        <span class="link">gravity-ui.com <span class="link-icon"></span></span>
+      </a>
+
+      <a class="card" href="https://ant.design/" target="_blank">
+        <img
+          src="https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
+          alt="Ant Design"
+        />
+        <strong>Ant Design</strong>
+        <p>
+          Одна из самых популярных UI-библиотек React с богатым набором готовых
+          компонентов.
+        </p>
+        <span class="link">ant.design <span class="link-icon"></span></span>
+      </a>
+
+      <a class="card" href="https://mantine.dev/" target="_blank">
+        <img src="https://mantine.dev/favicon.svg" alt="Mantine" />
+        <strong>Mantine</strong>
+        <p>
+          Современная React-библиотека с акцентом на простоту, доступность и
+          удобные хуки.
+        </p>
+        <span class="link">mantine.dev <span class="link-icon"></span></span>
+      </a>
+
+      <a class="card" href="https://www.radix-ui.com/" target="_blank">
+        <img src="https://www.radix-ui.com/favicon.png" alt="Radix UI" />
+        <strong>Radix UI</strong>
+        <p>
+          Headless-компоненты для React: чистая логика и стилизация на выбор
+          разработчика.
+        </p>
+        <span class="link">radix-ui.com <span class="link-icon"></span></span>
+      </a>
+    </div>
+
+    <h2>Инструменты</h2>
+    <div class="grid">
+      <a
+        class="card"
+        href="https://atomicdesign.bradfrost.com/chapter-2/"
+        target="_blank"
+      >
+        <img
+          src="https://atomicdesign.bradfrost.com/favicon.ico"
+          alt="Atomic Design"
+        />
+        <strong>Atomic Design</strong>
+        <p>
+          Методология проектирования интерфейсов через атомы, молекулы и
+          организмы.
+        </p>
+        <span class="link"
+          >atomicdesign.bradfrost.com <span class="link-icon"></span
+        ></span>
+      </a>
+
+      <a class="card" href="https://docusaurus.io/" target="_blank">
+        <img src="https://docusaurus.io/img/docusaurus.png" alt="Docusaurus" />
+        <strong>Docusaurus</strong>
+        <p>Фреймворк для создания документации и сайтов с поддержкой MDX.</p>
+        <span class="link">docusaurus.io <span class="link-icon"></span></span>
+      </a>
+
+      <a class="card" href="https://storybook.js.org/" target="_blank">
+        <img src="https://storybook.js.org/icon.svg" alt="Storybook" />
+        <strong>Storybook</strong>
+        <p>
+          Инструмент для разработки и документирования UI-компонентов в
+          изоляции.
+        </p>
+        <span class="link"
+          >storybook.js.org <span class="link-icon"></span
+        ></span>
+      </a>
+
+      <a class="card" href="https://zeroheight.com/" target="_blank">
+        <img src="https://zeroheight.com/favicon.ico" alt="Zeroheight" />
+        <strong>Zeroheight</strong>
+        <p>Платформа для хранения и публикации дизайн-систем и документации.</p>
+        <span class="link">zeroheight.com <span class="link-icon"></span></span>
+      </a>
+
+      <a class="card" href="https://react-svgr.com/" target="_blank">
+        <img
+          src="https://react-svgr.com/icons/icon-256x256.png"
+          alt="React SVGR"
+        />
+        <strong>React SVGR</strong>
+        <p>
+          Конвертация SVG в React-компоненты с поддержкой оптимизации и
+          кастомизации.
+        </p>
+        <span class="link">react-svgr.com <span class="link-icon"></span></span>
+      </a>
+
+      <a
+        class="card"
+        href="https://www.figma.com/community/plugin/1253571037276959291"
+        target="_blank"
+      >
+        <img
+          src="https://static.figma.com/app/icon/1/icon-192.png"
+          alt="Figma Plugin"
+        />
+        <strong>Figma Plugin (Tokens Studio)</strong>
+        <p>
+          Плагин для работы с дизайн-токенами в Figma и синхронизации с кодом.
+        </p>
+        <span class="link"
+          >figma.com/plugin <span class="link-icon"></span
+        ></span>
+      </a>
+
+      <a
+        class="card"
+        href="https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma"
+        target="_blank"
+      >
+        <img
+          src="https://static.figma.com/app/icon/1/icon-192.png"
+          alt="Figma Variables"
+        />
+        <strong>Figma Variables Guide</strong>
+        <p>
+          Официальное руководство по использованию переменных в Figma для
+          дизайн-систем.
+        </p>
+        <span class="link">help.figma.com <span class="link-icon"></span></span>
+      </a>
+    </div>
+
+    <footer>&copy; 2025 — Лэндинг для презентации</footer>
+  </body>
+</html>
